@@ -3,8 +3,8 @@
 $route = $_SERVER['REQUEST_URI'];
 
 switch ($route) {
-    case '/':
-        require BASE_PATH . 'app/controllers/menuController.php';
+    case '/admin':
         break;
-        default:
+    default:
+        require BASE_PATH . 'app/controllers/menuController.php';
 }
