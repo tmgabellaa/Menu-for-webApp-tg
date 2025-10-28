@@ -4,5 +4,7 @@ return [
     'user' => 'avnadmin',
     'password' => 'AVNS_XssA2qb5rasxarMzUgl',
     'database' => 'defaultdb',
+    'port' => '24545'
 ];
+
 
