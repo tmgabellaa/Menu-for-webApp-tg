@@ -1,8 +1,6 @@
 <?php
 
-
-
-function getDB()
+function getDB() : object|string
 {
     $config = require BASE_PATH . 'config/config.php';
     try {
