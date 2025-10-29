@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
     <title>Магазин</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
+    <!-- Bootstrap JS + Popper JS -->
+    <script  src="/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <header>
     <?php include BASE_PATH . 'app/views/layouts/header.php'; ?>
 </header>
-
-<script src="../../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,12 @@
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Магазин</a>
+        <a class="navbar-brand" href="/">
+            <?php
+            /** @var  */
+            htmlspecialchars($logo[0]['title'])
+            ?>
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainNav" aria-controls="mainNav"
@@ -10,15 +16,15 @@
 
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Шаурма</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/kebab.php">Кебаб</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/drinks.php">Напитки</a>
-                </li>
+
+                <?php
+                /** @var array $navbar */
+                foreach ($navbar as $item) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/"><?=htmlspecialchars($item['name'])?></a>
+                    </li>
+                <?php endforeach; ?>
+
             </ul>
         </div>
     </div>
