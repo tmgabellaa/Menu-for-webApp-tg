@@ -14,5 +14,6 @@
 <header>
     <?php include BASE_PATH . 'app/views/layouts/header.php'; ?>
 </header>
+<h1></h1>
 </body>
 </html>

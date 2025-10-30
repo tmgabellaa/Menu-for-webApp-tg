@@ -3,8 +3,8 @@
     <div class="container">
         <a class="navbar-brand" href="/">
             <?php
-            /** @var  */
-            htmlspecialchars($logo[0]['title'])
+            /** @var array $logo */
+            echo htmlspecialchars($logo[0]['title'])
             ?>
         </a>
 
