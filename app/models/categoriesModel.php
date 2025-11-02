@@ -1,8 +1,8 @@
 <?php
 
-function getNavbar($db)
+function getCategories($db)
 {
-    $sql = 'SELECT * FROM navbar';
+    $sql = 'SELECT * FROM categories';
     $stmt = $db->query($sql);
     return $stmt->fetchAll();
 }

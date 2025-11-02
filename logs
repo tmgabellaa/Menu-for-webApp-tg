@@ -431,3 +431,256 @@ Stack trace:
 #2 {main}
   thrown in C:\Coding\Php_projects\Menu\app\controllers\menuController.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
 127.0.0.1 - - [30/Oct/2025:20:43:30 +0700] "GET / HTTP/1.1" 500 5 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/10/30 20:44:39 [error] 3956#508: *21 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [30/Oct/2025:20:44:39 +0700] "GET / HTTP/1.1" 200 1719 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/10/31 20:09:33 [error] 11788#12892: *1 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [31/Oct/2025:20:09:33 +0700] "GET / HTTP/1.1" 200 1719 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [31/Oct/2025:20:09:33 +0700] "GET /css/bootstrap.min.css HTTP/1.1" 200 232111 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [31/Oct/2025:20:09:33 +0700] "GET /js/bootstrap.bundle.min.js HTTP/1.1" 304 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [31/Oct/2025:20:09:33 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/10/31 20:09:39 [error] 11788#12892: *4 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [31/Oct/2025:20:09:39 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 1719 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/10/31 20:10:13 [error] 11788#12892: *6 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [31/Oct/2025:20:10:13 +0700] "GET / HTTP/1.1" 200 1719 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/10/31 20:28:45 [error] 11788#12892: *8 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [31/Oct/2025:20:28:45 +0700] "GET / HTTP/1.1" 200 1731 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [31/Oct/2025:20:28:45 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:10:05 [error] 6700#5664: *1 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:19:10:05 +0700] "GET / HTTP/1.1" 200 1731 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [01/Nov/2025:19:10:05 +0700] "GET /css/bootstrap.min.css HTTP/1.1" 200 232111 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [01/Nov/2025:19:10:05 +0700] "GET /js/bootstrap.bundle.min.js HTTP/1.1" 304 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [01/Nov/2025:19:10:05 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 19:13:58 [error] 6700#5664: *4 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:19:13:58 +0700] "GET / HTTP/1.1" 200 1544 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [01/Nov/2025:19:13:58 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 19:14:06 [error] 6700#5664: *7 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:19:14:06 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 1544 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 19:14:13 [error] 6700#5664: *9 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:14:13 +0700] "GET / HTTP/1.1" 200 1544 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:14:14 [error] 6700#5664: *7 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:19:14:14 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 1544 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 19:19:26 [error] 6700#5664: *12 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:19:26 +0700] "GET / HTTP/1.1" 200 1598 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:19:19:26 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:19:27 [error] 6700#5664: *15 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:19:19:27 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 1598 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 19:19:33 [error] 6700#5664: *17 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:19:33 +0700] "GET / HTTP/1.1" 200 1598 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:20:20 [error] 6700#5664: *17 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:20:20 +0700] "GET / HTTP/1.1" 200 1629 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:19:20:21 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:25:08 [error] 6700#5664: *21 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:25:08 +0700] "GET / HTTP/1.1" 200 2807 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:19:25:08 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 19:25:11 [error] 6700#5664: *24 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:19:25:11 +0700] "GET / HTTP/1.1" 200 2807 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:05:07 [error] 6700#5664: *26 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:05:07 +0700] "GET / HTTP/1.1" 200 2807 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:20:05:07 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:46:39 [error] 6700#5664: *29 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'defaultdb.product' doesn't exist in C:\Coding\Php_projects\Menu\app\models\productsModel.php:6
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\models\productsModel.php(6): PDO->query()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(13): getProducts()
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\models\productsModel.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:46:39 +0700] "GET / HTTP/1.1" 500 5 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:47:26 [error] 6700#5664: *29 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:22
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(22): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:47:26 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:20:47:26 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:47:32 [error] 6700#5664: *33 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:22
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(22): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:47:32 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:49:07 [error] 6700#5664: *35 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:22
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(22): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:49:07 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:50:46 [error] 6700#5664: *37 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:50:46 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:20:50:46 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 20:51:23 [error] 6700#5664: *40 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:25
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(25): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:20:51:23 +0700] "GET / HTTP/1.1" 500 3059 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:15:48 [error] 6700#5664: *42 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:25
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(25): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:15:48 +0700] "GET / HTTP/1.1" 500 3059 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:15:57 [error] 6700#5664: *42 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:15:57 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:16:31 [error] 6700#5664: *42 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:16:31 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:16:36 [error] 6700#5664: *42 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:16:36 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:16:42 [error] 6700#5664: *47 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:16:42 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 500 2764 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:16:52 [error] 6700#5664: *42 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories_id' in 'where clause' in C:\Coding\Php_projects\Menu\app\views\index.php:24
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\views\index.php(24): PDO->prepare()
+#1 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include('...')
+#2 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#3 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#4 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:16:52 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:16:52 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:18:42 [error] 6700#5664: *51 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:18:42 +0700] "GET /Images/123.png HTTP/1.1" 200 25596 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:18:42 +0700] "GET / HTTP/1.1" 200 49038 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:19:39 [error] 6700#5664: *51 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:19:39 +0700] "GET / HTTP/1.1" 200 49038 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:20:49 [error] 6700#5664: *55 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught Error: Call to undefined method PDO::execute() in C:\Coding\Php_projects\Menu\app\views\index.php:26
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include()
+#1 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#2 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#3 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:20:49 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:22:21 [error] 6700#5664: *57 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+PHP Fatal error:  Uncaught Error: Call to undefined method PDO::fetchAll() in C:\Coding\Php_projects\Menu\app\views\index.php:27
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(16): include()
+#1 C:\Coding\Php_projects\Menu\core\router.php(10): showMenu()
+#2 C:\Coding\Php_projects\Menu\public\index.php(3): require_once('...')
+#3 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\views\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:22:21 +0700] "GET / HTTP/1.1" 500 2764 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:23:06 [error] 6700#5664: *57 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:23:06 +0700] "GET / HTTP/1.1" 200 18113 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:24:37 [error] 6700#5664: *60 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:24:37 +0700] "GET / HTTP/1.1" 200 18136 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:24:55 [error] 6700#5664: *60 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:24:56 +0700] "GET / HTTP/1.1" 200 18114 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:25:05 [error] 6700#5664: *60 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:25:05 +0700] "GET / HTTP/1.1" 200 18116 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:25:21 [error] 6700#5664: *60 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:25:21 +0700] "GET / HTTP/1.1" 200 18139 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:25:25 +0700] "GET /css/bootstrap.min.css HTTP/1.1" 200 32768 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:25:26 [error] 6700#5664: *66 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:25:27 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 18139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:27:05 [error] 6700#5664: *68 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:27:05 +0700] "GET / HTTP/1.1" 200 18150 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:27:05 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:27:09 [error] 6700#5664: *71 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:27:09 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 18150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:28:18 [error] 6700#5664: *73 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:28:18 +0700] "GET / HTTP/1.1" 200 39998 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:28:20 [error] 6700#5664: *75 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:28:20 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 39998 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:31:12 [error] 6700#5664: *77 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:31:12 +0700] "GET / HTTP/1.1" 200 36923 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+127.0.0.1 - - [01/Nov/2025:21:31:12 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:31:29 [error] 6700#5664: *80 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:31:29 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 36923 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:35:21 [error] 6700#5664: *82 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:35:22 +0700] "GET / HTTP/1.1" 200 23092 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:35:22 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:35:24 [error] 6700#5664: *84 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:35:24 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 23092 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:36:17 [error] 6700#5664: *87 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:36:17 +0700] "GET / HTTP/1.1" 200 18150 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:36:17 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:36:19 [error] 6700#5664: *84 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:36:19 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 18150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:37:16 [error] 6700#5664: *93 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:37:16 +0700] "GET / HTTP/1.1" 200 18150 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:21:37:16 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:37:20 [error] 6700#5664: *84 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:37:20 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 18150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 21:38:39 [error] 6700#5664: *97 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:21:38:39 +0700] "GET / HTTP/1.1" 200 18150 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 21:38:40 [error] 6700#5664: *99 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:21:38:41 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 18150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 22:28:34 [error] 6700#5664: *101 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:22:28:35 +0700] "GET / HTTP/1.1" 200 19470 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 22:28:36 [error] 6700#5664: *103 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:22:28:37 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 19470 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 22:28:51 [error] 6700#5664: *101 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:22:28:51 +0700] "GET / HTTP/1.1" 200 19470 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 22:28:53 [error] 6700#5664: *103 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /css/bootstrap.min.css.map HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [01/Nov/2025:22:28:53 +0700] "GET /css/bootstrap.min.css.map HTTP/1.1" 200 19470 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+2025/11/01 22:29:11 [error] 6700#5664: *101 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:22:29:11 +0700] "GET / HTTP/1.1" 200 19470 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 22:29:38 [error] 6700#5664: *101 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:22:29:38 +0700] "GET / HTTP/1.1" 200 19470 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/11/01 22:30:35 [error] 6700#5664: *101 FastCGI sent in stderr: "Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port)" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+127.0.0.1 - - [01/Nov/2025:22:30:35 +0700] "GET / HTTP/1.1" 200 19470 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+127.0.0.1 - - [01/Nov/2025:22:30:35 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
