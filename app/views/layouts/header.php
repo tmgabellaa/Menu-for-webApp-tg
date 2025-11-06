@@ -1,24 +1,48 @@
-<nav class="navbar flex-column pt-3" style="background-color: #191917;">
+<nav class="navbar flex-column pt-3" style="background-color: #191917; position: fixed; top: 0; z-index: 10; width: 100%">
     <div class="container-fluid text-center">
-        <!-- Название магазина -->
+
         <a class="navbar-brand d-block mx-auto" href="/" style="color: #dededc;">
             <?php /** @var array $logo */ echo htmlspecialchars($logo[0]['title']); ?>
         </a>
 
-        <!-- Горизонтальный скролл категорий -->
         <div class="w-100">
             <div class="d-flex justify-content-center flex-nowrap overflow-auto pb-2">
-                <?php /** @var array $categories */ foreach ($categories as $item): ?>
-                    <a href="/"
-                       class="text-decoration-none mx-3 flex-shrink-0"
-                       style="color: #787876;"
-                       onmouseover="this.style.color='#dededc'"
-                       onmouseout="if(!this.classList.contains('active')) this.style.color='#787876'"
-                       onclick="document.querySelectorAll('.category-link').forEach(a=>a.classList.remove('active')); this.classList.add('active'); this.style.color='#dededc';">
+                <?php $i = 1; /** @var array $categories */ foreach ($categories as $item) : ?>
+                    <a href="#"
+                       id="category_header"
+                       data-target = "<?=$i?>"
+                       class=" category_header text-decoration-none mx-3 flex-shrink-0"
+                       style="color: #787876"
+                    >
                         <?= htmlspecialchars($item['name']) ?>
                     </a>
-                <?php endforeach; ?>
+                <?php $i++; endforeach; ?>
             </div>
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded',  () => {
+
+        const links = document.querySelectorAll('.category_header');
+
+        links.forEach(link  => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                links.forEach( l => {
+                    l.style.color = '#787876';
+                    l.style.borderBottom = 'none';
+                });
+                link.style.color = '#dededc';
+                link.style.borderBottom = '0.08rem solid #dededc';
+
+                const dataTarget = link.dataset.target;
+                const id = document.getElementById(dataTarget);
+
+                id.scrollIntoView({behavior: 'smooth'});
+            })
+        })
+    });
+</script>

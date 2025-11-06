@@ -12,6 +12,17 @@ function showMenu($db) : void
     $logo = getLogo($db)?? [];
     $products = getProducts($db)?? [];
 
+    $dataCategoriesOrProducts = [];
+    foreach($categories as $category){
+        $products = getProductsForId_categories($db, $category['id'])?? [];
+
+        $dataCategoriesOrProducts[] = [
+            'categories' => $category,
+            'products' => $products,
+        ];
+
+    }
+
 
     include BASE_PATH . 'app/views/index.php';
 }

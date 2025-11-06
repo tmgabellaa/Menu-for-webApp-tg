@@ -15,25 +15,15 @@
 </header>
 <body style="background-color: #191917;">
 
+<div style="margin-top: 100px">
 <?php
-/** @var  $categories */
-/** @var  $db */
+$i = 1;
+/** @var array $dataCategoriesOrProducts */
+foreach ($dataCategoriesOrProducts as $item) :  ?>
 
-    foreach ($categories as $category) :
+    <?php include BASE_PATH . 'app/views/layouts/item.php'; ?>
 
-        try {
-            $res = $db->prepare("SELECT * FROM products WHERE id_categories = :categories_id");
-            $res->execute(['categories_id' => $category['id']]);
-            $products = $res->fetchAll();
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-        }
-?>
-
-        <?php include BASE_PATH . 'app/views/layouts/item.php';?>
-
-
-<?php endforeach; ?>
-
+<?php $i++; endforeach; ?>
+</div>
 </body>
 </html>
