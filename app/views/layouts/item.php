@@ -1,7 +1,8 @@
 <div class="container px-4 pb-4">
+
     <h1
-            <?php /** @var integer $i */?>
-            id="<?=$i?>"
+            <?php /** @var array $item */?>
+            id="<?=htmlspecialchars($item['categories']['id'])?>"
             class="mt-4"
             style="color: #dededc; scroll-margin-top: 100px;"
     >
@@ -12,7 +13,6 @@
     </h1>
     <div class="row row-cols-2 row-cols-lg-2 g-2">
         <?php
-        /** @var array  $products */
         foreach ($item['products'] as $product): ?>
         <div class="col ">
             <div class="card h-100 rounded-4 border-2" style="background: none; font-size: 12px; ">
@@ -23,11 +23,19 @@
                             class="object-fit-cover rounded-4 w-100 h-100"
                     >
                     <button
-                            id="button"
-                            class="btn  position-absolute "
-                            style="bottom:10px; right:10px; width:20%; height:20%; padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;line-height:1;"
+                            data-id = "<?=htmlspecialchars($product['id'])?>"
+                            class="btn plus position-absolute "
+                            style="bottom:0.8rem; right:0.8rem; width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
                     >
                         <span style="position:relative; top:-1px;">+</span>
+                    </button>
+                    <button
+
+                            id = "<?=htmlspecialchars($product['id'])?>"
+                            class="btn minus position-absolute "
+                            style=" bottom:0.8rem; left:0.8rem; width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
+                    >
+                        <span style="position:relative; top:-1px;">-</span>
                     </button>
                 </div>
 
@@ -43,12 +51,3 @@
         <?php endforeach; ?>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('button');
-
-        btn.addEventListener('click', () => {
-            
-        })
-    });
-</script>

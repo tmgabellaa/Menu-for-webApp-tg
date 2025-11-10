@@ -9,10 +9,10 @@
             <div class="d-flex justify-content-center flex-nowrap overflow-auto pb-2">
                 <?php $i = 1; /** @var array $categories */ foreach ($categories as $item) : ?>
                     <a href="#"
-                       id="category_header"
-                       data-target = "<?=$i?>"
+                       id = "category_header"
+                       data-target = "<?=htmlspecialchars($item['id'])?>"
                        class=" category_header text-decoration-none mx-3 flex-shrink-0"
-                       style="color: #787876"
+                       style="color: #787876; "
                     >
                         <?= htmlspecialchars($item['name']) ?>
                     </a>
@@ -26,6 +26,7 @@
     document.addEventListener('DOMContentLoaded',  () => {
 
         const links = document.querySelectorAll('.category_header');
+        console.log(links)
 
         links.forEach(link  => {
             link.addEventListener('click', (e) => {
@@ -38,10 +39,10 @@
                 link.style.color = '#dededc';
                 link.style.borderBottom = '0.08rem solid #dededc';
 
-                const dataTarget = link.dataset.target;
-                const id = document.getElementById(dataTarget);
+                const dataTarget = link.dataset.target
+                const id = document.getElementById(dataTarget)
 
-                id.scrollIntoView({behavior: 'smooth'});
+                id.scrollIntoView({behavior: 'smooth'})
             })
         })
     });
