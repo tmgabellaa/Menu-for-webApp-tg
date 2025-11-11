@@ -2,7 +2,7 @@
 
     <h1
             <?php /** @var array $item */?>
-            id="<?=htmlspecialchars($item['categories']['id'])?>"
+            id="category-<?=htmlspecialchars($item['categories']['id'])?>"
             class="mt-4"
             style="color: #dededc; scroll-margin-top: 100px;"
     >
@@ -22,21 +22,28 @@
                             alt=""
                             class="object-fit-cover rounded-4 w-100 h-100"
                     >
-                    <button
-                            data-id = "<?=htmlspecialchars($product['id'])?>"
-                            class="btn plus position-absolute "
-                            style="bottom:0.8rem; right:0.8rem; width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
+                    <div class="position-absolute d-flex justify-content-between align-items-center"
+                         style="bottom:0.8rem; right:0.8rem; left:0.8rem;"
                     >
-                        <span style="position:relative; top:-1px;">+</span>
-                    </button>
-                    <button
-
-                            id = "<?=htmlspecialchars($product['id'])?>"
-                            class="btn minus position-absolute "
-                            style=" bottom:0.8rem; left:0.8rem; width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
-                    >
-                        <span style="position:relative; top:-1px;">-</span>
-                    </button>
+                        <button
+                                hidden
+                                id="<?= htmlspecialchars($product['id']) ?>"
+                                class="btn minus"
+                                style="width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
+                        >
+                            <span style="position:relative; top:-1px;">-</span>
+                        </button>
+                        <span
+                              style="color:#dededc; font-weight:600;"
+                        ></span>
+                        <button
+                                data-id="<?= htmlspecialchars($product['id']) ?>"
+                                class="btn plus"
+                                style=" width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
+                        >
+                            <span style="position:relative; top:-1px;">+</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="card-body" style="padding: 0.5rem; line-height: 1.2;">
@@ -44,10 +51,35 @@
                     <h5 class="card-title" style="color: #dededc; font-size: 14px;"><?php echo htmlspecialchars($product['name']) ?></h5>
                     <p class="card-text" style="color: #787876; margin-bottom: 0.2rem;"><?php echo htmlspecialchars($product['description']) ?></p>
                     <div style="color: #787876"><?= htmlspecialchars($product['weight']) . ' . ' . htmlspecialchars($product['calories'])?></div>
-
                 </div>
             </div>
         </div>
         <?php endforeach; ?>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btns = document.querySelectorAll('.plus');
+        console.log(btns);
+
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const idBtnPlus = btn.dataset.id;
+                const btnMinus = document.getElementById(idBtnPlus);
+
+                if(btnMinus.hasAttribute('hidden')){
+                    btnMinus.removeAttribute('hidden');
+                }
+
+                fetch('/basket', {
+                    method: 'POST',
+                    headers: {'content-type': 'application/json'},
+                    body: JSON.stringify({id: idBtnPlus})
+                })
+
+            });
+        });
+    });
+</script>
