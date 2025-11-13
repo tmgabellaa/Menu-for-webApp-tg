@@ -14,9 +14,16 @@ function click()
 
     $id = $data['id'];
 
-    if(isset($_SESSION['basket'])){
 
+    if(!isset($_SESSION['basket']))
+    {
+        $_SESSION['basket'][$id]['count'] = 1;
     }
+
+    $_SESSION['basket'][$id]['count']++;
+
+
+
 
 
 }
