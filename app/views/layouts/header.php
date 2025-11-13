@@ -7,16 +7,15 @@
 
         <div class="w-100">
             <div class="d-flex justify-content-center flex-nowrap overflow-auto pb-2">
-                <?php $i = 1; /** @var array $categories */ foreach ($categories as $item) : ?>
+                <?php /** @var array $categories */ foreach ($categories as $item) : ?>
                     <a href="#"
-                       id = "category_header"
-                       data-target = "<?=htmlspecialchars($item['id'])?>"
+                       data-target = "category-<?=htmlspecialchars($item['id'])?>"
                        class=" category_header text-decoration-none mx-3 flex-shrink-0"
                        style="color: #787876; "
                     >
                         <?= htmlspecialchars($item['name']) ?>
                     </a>
-                <?php $i++; endforeach; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -26,7 +25,6 @@
     document.addEventListener('DOMContentLoaded',  () => {
 
         const links = document.querySelectorAll('.category_header');
-        console.log(links)
 
         links.forEach(link  => {
             link.addEventListener('click', (e) => {

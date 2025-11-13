@@ -6,7 +6,7 @@ require_once BASE_PATH . 'config/db.php';
 
 
 $db = getDB();
-function showMenu($db) : void
+function actionIndexMenu($db) : void
 {
     $categories = getCategories($db)?? [];
     $logo = getLogo($db)?? [];

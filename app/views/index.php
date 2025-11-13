@@ -17,13 +17,12 @@
 
 <div style="margin-top: 100px">
 <?php
-$i = 1;
 /** @var array $dataCategoriesOrProducts */
 foreach ($dataCategoriesOrProducts as $item) :  ?>
 
     <?php include BASE_PATH . 'app/views/layouts/item.php'; ?>
 
-<?php $i++; endforeach; ?>
+<?php endforeach; ?>
 </div>
 </body>
 </html>
