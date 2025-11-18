@@ -27,17 +27,18 @@
                     >
                         <button
                                 hidden
-                                id="<?= htmlspecialchars($product['id']) ?>"
+                                id="button-<?= htmlspecialchars($product['id']) ?>"
                                 class="btn minus"
                                 style="width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
                         >
                             <span style="position:relative; top:-1px;">-</span>
                         </button>
                         <span
+                              id="quantity-button-<?= htmlspecialchars($product['id']) ?>"
                               style="color:#dededc; font-weight:600;"
                         ></span>
                         <button
-                                data-id="<?= htmlspecialchars($product['id']) ?>"
+                                data-id="button-<?= htmlspecialchars($product['id']) ?>"
                                 class="btn plus"
                                 style=" width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
                         >
@@ -68,6 +69,9 @@
             btn.addEventListener('click', () => {
                 const idBtnPlus = btn.dataset.id;
                 const btnMinus = document.getElementById(idBtnPlus);
+                const quantity = document.getElementById('quantity-' + idBtnPlus)
+
+
 
                 if(btnMinus.hasAttribute('hidden')){
                     btnMinus.removeAttribute('hidden');
@@ -78,6 +82,18 @@
                     headers: {'content-type': 'application/json'},
                     body: JSON.stringify({id: idBtnPlus})
                 })
+                    .then(response => {
+                        if(!response.ok){
+                            throw new  Error('Ошибка /basket fun click' + response.status);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+
+                       const arrData = JSON.parse(data);
+                       quantity.textContent = data['quantity'];
+
+                    })
 
             });
         });
