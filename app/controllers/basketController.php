@@ -14,29 +14,15 @@ function click()
 
     $id = $data['id'];
 
-<<<<<<< Updated upstream
-
-    if(!isset($_SESSION['basket']))
-    {
-        $_SESSION['basket'][$id]['count'] = 1;
-=======
-    if(isset($_SESSION['basket'])){
+    if(!isset($_SESSION['basket'])){
         $_SESSION['basket'][$id]['quantity'] = 1;
->>>>>>> Stashed changes
     }
     $_SESSION['basket'][$id]['quantity']++;
 
+
     header('content-type: application/json');
     $response = [
-      'success' => true,
       'quantity' => $_SESSION['basket'][$id]['quantity'],
     ];
     return json_encode($response);
-
-    $_SESSION['basket'][$id]['count']++;
-
-
-
-
-
 }
