@@ -64,14 +64,11 @@
         const btns = document.querySelectorAll('.plus');
         console.log(btns);
 
-
         btns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const idBtnPlus = btn.dataset.id;
                 const btnMinus = document.getElementById(idBtnPlus);
                 const quantity = document.getElementById('quantity-' + idBtnPlus)
-
-
 
                 if(btnMinus.hasAttribute('hidden')){
                     btnMinus.removeAttribute('hidden');
@@ -82,19 +79,10 @@
                     headers: {'content-type': 'application/json'},
                     body: JSON.stringify({id: idBtnPlus})
                 })
-                    .then(response => {
-                        if(!response.ok){
-                            throw new  Error('Ошибка /basket fun click' + response.status);
-                        }
-                        return response.json();
+                    .then(response => response.text())
+                    .then(text => {
+                        console.log("Ответ сервера:", text);
                     })
-                    .then(data => {
-
-                       const arrData = JSON.parse(data);
-                       quantity.textContent = data['quantity'];
-
-                    })
-
             });
         });
     });
