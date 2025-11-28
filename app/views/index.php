@@ -24,6 +24,37 @@ foreach ($dataCategoriesOrProducts as $item) :  ?>
 
 <?php endforeach; ?>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btns = document.querySelectorAll('.plus');
+        console.log(btns);
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const idBtnPlus = btn.dataset.id;
+                const btnMinus = document.getElementById(idBtnPlus);
+                const quantity = document.getElementById('quantity-' + idBtnPlus)
+
+                console.log(idBtnPlus)
+
+                if(btnMinus.hasAttribute('hidden')){
+                    btnMinus.removeAttribute('hidden');
+                }
+
+                fetch('/basket', {
+                    method: 'POST',
+                    headers: {'content-type': 'application/json'},
+                    body: JSON.stringify({id: idBtnPlus, checking: 'Misha228'})
+                })
+                    .then(response => response.text())
+                    .then(text => {
+                        console.log("Ответ сервера:", text);
+                    })
+            });
+        });
+    });
+</script>
 </body>
 </html>
 
