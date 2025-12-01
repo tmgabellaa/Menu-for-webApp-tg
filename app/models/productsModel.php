@@ -18,3 +18,14 @@ function getProductsForId_categories($db, $currentId)
     }
 
 }
+
+function getCost($db, $id)
+{
+    try {
+        $res = $db->prepare("SELECT price FROM products WHERE id = :id");
+        $res->execute(['id' => $id]);
+        return $res->fetch();
+    } catch (PDOException $e) {
+        return $e->getMessage();
+    }
+}
