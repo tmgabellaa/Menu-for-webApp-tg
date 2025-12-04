@@ -6,7 +6,7 @@ $route = $_SERVER['REQUEST_URI'];
 /** @var object $db */
 switch ($route) {
     case '/basket':
-        click();
+        echo click();
         break;
     default:
         actionIndexMenu($db);

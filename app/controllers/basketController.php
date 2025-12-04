@@ -12,12 +12,13 @@ function click(): false|string
         if ($data['checking'] === 'Misha228') {
             $id = $data['id'];
 
-            if(!isset($_SESSION['basket']))
+            if(!isset($_SESSION['basket'][$id]))
             {
                 $_SESSION['basket'][$id]['quantity'] = 1;
+            } else {
+                $_SESSION['basket'][$id]['quantity']++;
             }
 
-            $_SESSION['basket'][$id]['quantity']++;
 
             header('Content-Type: application/json;charset=utf-8');
             $response = [

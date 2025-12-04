@@ -3,11 +3,8 @@
 <head>
     <title>Магазин</title>
     <meta charset="utf-8">
-    <!-- Настройка viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- Bootstrap JS + Popper JS -->
     <script src="/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
@@ -47,9 +44,12 @@ foreach ($dataCategoriesOrProducts as $item) :  ?>
                     headers: {'content-type': 'application/json'},
                     body: JSON.stringify({id: idBtnPlus, checking: 'Misha228'})
                 })
-                    .then(response => response.text())
-                    .then(text => {
-                        console.log("Ответ сервера:", text);
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log("Ответ сервера:", data['quantity']);
+
+                        quantity.textContent = data['quantity'];
+
                     })
             });
         });
