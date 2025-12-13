@@ -5,7 +5,6 @@ require_once BASE_PATH . 'app/models/productsModel.php';
 require_once BASE_PATH . 'config/db.php';
 
 
-$db = getDB();
 function actionIndexMenu($db) : void
 {
     $categories = getCategories($db)?? [];

@@ -1,9 +1,5 @@
 <?php
-
 require_once BASE_PATH . 'app/models/productsModel.php';
-require_once BASE_PATH . 'config/db.php';
-
-$db = getDb();
 
 function click($db): false|string
 {
@@ -16,9 +12,6 @@ function click($db): false|string
             $arr = explode('-', $data['id']);
             $id = end($arr);
 
-            $_SESSION['basket'][$id]['cost'] = getCost($db, $id);
-
-
 
             if(!isset($_SESSION['basket'][$id]))
             {
@@ -27,9 +20,27 @@ function click($db): false|string
                 $_SESSION['basket'][$id]['quantity']++;
             }
 
+            if (!isset($_SESSION['basket']['total_cost'])){
+                $_SESSION['basket']['total_cost'] = 0;
+            }
+            $st_time = microtime(true);
+            $cost = getCost($db, $id);
+            $en_time = microtime(true);
+            if (is_numeric($cost))
+            {
+                $_SESSION['basket']['total_cost'] += $cost;
+            } else {
+                $message = "cost is not numeric: $cost";
+            }
+
+
+
             header('Content-Type: application/json;charset=utf-8');
             $response = [
                 'quantity' => $_SESSION['basket'][$id]['quantity'],
+                'total_cost' => $_SESSION['basket']['total_cost'],
+                'message' => $message ?? null,
+                'query_sql_time' => $en_time - $st_time,
             ];
         }
     }
