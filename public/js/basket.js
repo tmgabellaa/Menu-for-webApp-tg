@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data);
                     quantity.textContent = data['quantity'];
                 })
         });
