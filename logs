@@ -2661,3 +2661,18 @@ Stack trace:
 127.0.0.1 - - [14/Dec/2025:01:44:03 +0700] "GET / HTTP/1.1" 200 40016 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
 127.0.0.1 - - [14/Dec/2025:01:44:04 +0700] "GET /bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 40009 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
 127.0.0.1 - - [14/Dec/2025:01:44:17 +0700] "GET / HTTP/1.1" 200 40016 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025/12/31 10:47:18 [error] 8508#13684: *1 FastCGI sent in stderr: "PHP Warning:  Undefined variable $db in C:\Coding\Php_projects\Menu\core\router.php on line 13
+PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\Coding\Php_projects\Menu\app\models\categoriesModel.php:6
+Stack trace:
+#0 C:\Coding\Php_projects\Menu\app\controllers\menuController.php(10): getCategories()
+#1 C:\Coding\Php_projects\Menu\core\router.php(13): actionIndexMenu()
+#2 C:\Coding\Php_projects\Menu\public\index.php(4): require_once('...')
+#3 {main}
+  thrown in C:\Coding\Php_projects\Menu\app\models\categoriesModel.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [31/Dec/2025:10:47:18 +0700] "GET / HTTP/1.1" 500 168 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
+127.0.0.1 - - [31/Dec/2025:10:47:23 +0700] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
+127.0.0.1 - - [31/Dec/2025:10:47:31 +0700] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
+127.0.0.1 - - [31/Dec/2025:10:47:35 +0700] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
+2025/12/31 10:50:28 [error] 8508#13684: *8 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+127.0.0.1 - - [31/Dec/2025:10:50:28 +0700] "GET / HTTP/1.1" 504 167 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
+127.0.0.1 - - [31/Dec/2025:10:50:37 +0700] "GET /favicon.ico HTTP/1.1" 200 40009 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"

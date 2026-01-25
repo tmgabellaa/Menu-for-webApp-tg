@@ -1,10 +1,10 @@
 <?php
 return [
-    'host' => 'mysql-menu-tmgabella-menu.f.aivencloud.com',
-    'user' => 'avnadmin',
-    'password' => 'AVNS_XssA2qb5rasxarMzUgl',
-    'database' => 'defaultdb',
-    'port' => '24545'
+    'host' => 'localhost',
+    'user' => 'root',
+    'password' => 'root',
+    'database' => 'menu',
+    'port' => '3306'
 ];
 
 
