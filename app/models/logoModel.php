@@ -8,6 +8,6 @@ function getLogo($db)
         $res = $db->query($sql);
         return $res->fetchAll();
     } catch (PDOException $e) {
-        echo $e->getMessage();
+        return $e->getMessage();
     }
 }
