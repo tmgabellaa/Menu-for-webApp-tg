@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch('/basket', {
                 method: 'POST',
                 headers: {'content-type': 'application/json'},
-                body: JSON.stringify({id: idBtnPlus, checking: 'Misha228'})
+                body: JSON.stringify({id: idBtnPlus})
             })
                 .then(response => response.json())
                 .then(data => {

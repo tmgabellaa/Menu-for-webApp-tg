@@ -8,7 +8,7 @@ function click($db): false|string
         $json = file_get_contents('php://input');
         $data = json_decode($json, true);
 
-        if ($data['checking'] === 'Misha228') {
+
             $arr = explode('-', $data['id']);
             $id = end($arr);
 
@@ -43,6 +43,5 @@ function click($db): false|string
                 'query_sql_time' => $en_time - $st_time,
             ];
         }
-    }
     return json_encode($response);
 }
