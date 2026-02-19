@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const btns = document.querySelectorAll('.plus');
+    const btnsMinus = document.querySelectorAll('.minus');
 
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -25,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     quantity.textContent = data['quantity'];
                 })
         });
+
+        btnsMinus.forEach(btn => {
+          btn.addEventListener('click', () => {
+            
+          });
+        });
+
+
+
+
     });
 
 
