@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btnMinus.removeAttribute('hidden');
             }
 
-            fetch('/basket', {
+            fetch('/basket/add-click', {
                 method: 'POST',
                 headers: {'content-type': 'application/json'},
                 body: JSON.stringify({id: idBtnPlus})
@@ -27,17 +27,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
         });
 
-        btnsMinus.forEach(btn => {
-          btn.addEventListener('click', () => {
-            
-          });
-        });
+    });
 
+  btnsMinus.forEach(btn => {
+    btn.addEventListener('click', async () => {
+
+      const idBtnMinus = btn.dataset.id;
+      const quantity = document.getElementById('quantity-' + idBtnMinus)
+
+      const res = await fetch('/basket/delete-click', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: idBtnMinus })
+      });
+
+      if(!res.ok){
+        console.error('!ok');
+      }
+
+      const data = res.json();
+      quantity.textContent = data['quantity'];
 
 
 
     });
-
+  });
 
 
 });

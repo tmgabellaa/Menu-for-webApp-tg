@@ -5,12 +5,9 @@ function click($db): false|string
 {
     $response = [];
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $json = file_get_contents('php://input');
-        $data = json_decode($json, true);
 
-
-            $arr = explode('-', $data['id']);
-            $id = end($arr);
+            $data = getData();
+            $id = getId($data);
 
 
             if(!isset($_SESSION['basket'][$id]))
@@ -32,10 +29,7 @@ function click($db): false|string
             } else {
                 $message = "cost is not numeric: $cost";
             }
-
-
-
-            header('Content-Type: application/json;charset=utf-8');
+            
             $response = [
                 'quantity' => $_SESSION['basket'][$id]['quantity'],
                 'total_cost' => $_SESSION['basket']['total_cost'],
@@ -43,5 +37,54 @@ function click($db): false|string
                 'query_sql_time' => $en_time - $st_time,
             ];
         }
+    header('Content-Type: application/json;charset=utf-8');
     return json_encode($response);
 }
+
+function clickMinus($db)
+{
+    $response = [];
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        $data = getData();
+        $id = getId($data);
+
+        if(isset($_SESSION['basket'][$id]) && isset($_SESSION['basket']['total_cost']))
+        {
+            $_SESSION['basket'][$id]['quantity']--;
+
+            $cost = getCost($db, $id);
+            $_SESSION['basket']['total_cost'] -= $cost;
+
+
+            $response = [
+                'quantity' => $_SESSION['basket'][$id]['quantity'],
+                'total_cost' => $_SESSION['basket']['total_cost'],
+                'message' => $message ?? null,
+            ];
+        }
+        else {
+            $response = [
+                'message' => 'not isset id or total cost'
+            ];
+        }
+
+    }
+
+    header('Content-Type: application/json;charset=utf-8');
+    return json_encode($response);
+}
+
+function getData()
+{
+    $json = file_get_contents('php://input');
+    return json_decode($json, true);
+}
+
+function getId($data)
+{
+    $arr = explode('-', $data['id']);
+    return end($arr);
+}
+
+

@@ -28,6 +28,7 @@
                         <button
                                 hidden
                                 id="button-<?= htmlspecialchars($product['id']) ?>"
+                                data-id="button-<?= htmlspecialchars($product['id']) ?>"
                                 class="btn minus"
                                 style="width:clamp(2rem, 5vw, 3.5rem); height:clamp(2rem, 5vw, 3.5rem); padding:0; background-color:#dededc; border-radius: 50%;font-weight:700;"
                         >
